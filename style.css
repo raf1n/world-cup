@@ -1,0 +1,60 @@
+/* Google common font  */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* universal styles  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Common styles  */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* Top header banner  */
+.top-banner {
+  display: flex;
+  justify-content: center;
+  background: #161616;
+  border-radius: 30px;
+  padding-left: 100px;
+  padding-top: 50px;
+  margin: 100px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.banner-text h1,
+p {
+  color: white;
+}
+.banner-text,
+.banner-image {
+  width: 50%;
+}
+.banner-image img {
+  width: 100%;
+}
+.banner-text h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+.banner-text p {
+  font-weight: 400;
+  font-size: 16px;
+}
+/* banner button  */
+.watch-live-btn {
+  text-decoration: none;
+  background-color: rgb(230 136 9);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.fa-chevron-right {
+  position: relative;
+  left: 10px;
+}
