@@ -50,7 +50,8 @@ header {
 }
 
 .banner-image img {
-  width: 80%;
+  width: 581px;
+  height: 613px;
 }
 
 .banner-text h1 {
@@ -264,4 +265,72 @@ main {
 }
 .fa-discord {
   color: rgb(115, 138, 219);
+}
+.view-all {
+  display: none;
+}
+/* Resonsive Media Query */
+
+/* For Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner-image img {
+    width: 300px;
+    height: 613px;
+  }
+  .banner-text h1 {
+    font-size: 40px;
+  }
+  .banner-text p {
+    font: 14px;
+  }
+  .middle-section {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  .left-menu-item {
+    flex-direction: row;
+    background: none;
+    height: auto;
+    width: auto;
+  }
+  .left-menu-item a {
+    text-decoration: none;
+    background: white;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    width: 220px;
+    height: 64px;
+    color: #161616;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-menu-item a:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+  }
+
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .view-all {
+    display: inline;
+    position: relative;
+    left: 45%;
+  }
+  .footer {
+    position: relative;
+    top: 60px;
+    width: 90;
+  }
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
