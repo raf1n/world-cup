@@ -14,6 +14,7 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
 /* Top header banner  */
 
 header {
@@ -36,12 +37,18 @@ header {
   color: white;
   position: relative;
   bottom: 20px;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 70px;
 }
 
 .banner-text p {
   color: white;
   position: relative;
   bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .banner-text,
@@ -54,18 +61,6 @@ header {
   height: 613px;
 }
 
-.banner-text h1 {
-  font-weight: 700;
-  font-size: 55px;
-  line-height: 70px;
-}
-
-.banner-text p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-}
-
 /* banner button  */
 
 .watch-live-btn {
@@ -76,7 +71,7 @@ header {
   border-radius: 5px;
 }
 
-/* football rotate animation  */
+/* football icon rotate animation  */
 
 .fa-futbol {
   position: relative;
@@ -144,6 +139,9 @@ main {
   font-weight: 600;
   line-height: 30px;
 } */
+
+/* current page color style  */
+
 #current-page {
   background: rgb(230 136 9);
   color: #ffffff;
@@ -195,6 +193,7 @@ main {
   position: relative;
   top: 10px;
 }
+
 /* footer style  */
 
 .footer {
@@ -239,7 +238,7 @@ main {
   color: white;
 }
 
-/* Social icon transition */
+/* footer Social icon transition */
 
 .social-icon {
   display: flex;
@@ -252,7 +251,7 @@ main {
   transform: scale(1.7);
   transition: 0.3s;
 }
-/* Bonus Icon Color  */
+/* footer Bonus Icon Color  */
 
 .fa-facebook {
   color: #16a7fc;
@@ -269,11 +268,15 @@ main {
 .view-all {
   display: none;
 }
+
 /* Resonsive Media Query */
 
 /* For Tablet */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .top-banner {
+    position: relative;
+  }
   .banner-image img {
     width: 300px;
     height: 613px;
@@ -291,29 +294,12 @@ main {
   }
   .left-menu-item {
     flex-direction: row;
-    background: none;
+    background: white;
     height: auto;
     width: auto;
   }
   .left-menu-item a {
-    text-decoration: none;
-    background: white;
     border: 1px solid #e8e8e8;
-    border-radius: 10px;
-    width: 220px;
-    height: 64px;
-    color: #161616;
-    text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .left-menu-item a:hover {
-    transform: scale(1.2);
-    transition: 0.5s;
   }
 
   .blogs {
@@ -324,10 +310,10 @@ main {
     position: relative;
     left: 45%;
   }
+
   .footer {
     position: relative;
     top: 60px;
-    width: 90;
   }
   .footer-links {
     display: grid;
@@ -335,12 +321,13 @@ main {
   }
 }
 
-/*  Mobile Responsive  */
+/*  For Mobile   */
 
 @media only screen and (max-width: 767px) {
   .top-banner {
     flex-wrap: wrap;
     height: 600px;
+    position: relative;
   }
   .banner-text {
     width: 100%;
@@ -370,7 +357,7 @@ main {
     width: 280px;
     height: 300px;
     position: relative;
-    top: -30px;
+    top: -50px;
     left: -100px;
   }
   .banner-text p {
@@ -387,33 +374,29 @@ main {
 
   .left-menu-item {
     flex-direction: column;
+    background: white;
+    height: auto;
+    width: auto;
   }
-
+  .left-menu-item a {
+    border: 1px solid #e8e8e8;
+    width: 170px;
+    height: 40px;
+  }
   .blogs {
     grid-template-columns: repeat(1, 1fr);
   }
-  .left-menu-item a {
-    text-decoration: none;
-    background: #ffffff;
-    border: 1px solid #e8e8e8;
-    border-radius: 10px;
-    width: 220px;
-    height: 64px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   .footer {
     position: relative;
     top: 60px;
-    width: 90;
+  }
+  .footer h1 {
+    font-size: 22px;
   }
   .footer-links {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
   }
 }
