@@ -5,7 +5,7 @@
 /* universal styles  */
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -15,38 +15,49 @@ body {
   font-family: "Poppins", sans-serif;
 }
 /* Top header banner  */
+header {
+  max-width: 80%;
+}
 .top-banner {
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #161616;
   border-radius: 30px;
-  padding-left: 100px;
-  padding-top: 50px;
-  margin: 100px;
+  width: 100%;
   margin-top: 50px;
-  margin-bottom: 20px;
+  padding-left: 100px;
+  gap: 60px;
 }
 
 .banner-text h1,
 p {
   color: white;
 }
+
 .banner-text,
 .banner-image {
   width: 50%;
 }
+
 .banner-image img {
-  width: 100%;
+  width: 90%;
 }
+
 .banner-text h1 {
   font-weight: 700;
-  font-size: 50px;
+  font-size: 55px;
+  line-height: 70px;
 }
+
 .banner-text p {
   font-weight: 400;
   font-size: 16px;
+  line-height: 22px;
 }
+
 /* banner button  */
+
 .watch-live-btn {
   text-decoration: none;
   background-color: rgb(230 136 9);
@@ -54,7 +65,80 @@ p {
   padding: 10px 20px;
   border-radius: 5px;
 }
+
 .fa-chevron-right {
   position: relative;
   left: 10px;
+}
+
+/* footer style  */
+
+.footer {
+  height: 100%;
+  background: #161616;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+.footer-line {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 80%;
+}
+
+.footer-links {
+  display: flex;
+  padding: 15px;
+  gap: 50px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b9b9b9;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+/* Social icon transition animation  */
+
+.social-icon {
+  display: flex;
+  padding: 15px;
+  gap: 30px;
+  margin-bottom: 10px;
+  transform: scale(1.3);
+}
+
+.social-icon a:hover {
+  transform: scale(1.7);
+  transition: 0.3s;
+}
+/* Bonus Icon Color  */
+.fa-facebook {
+  color: #16a7fc;
+}
+.fa-youtube {
+  color: #ff0000;
+}
+.fa-instagram {
+  color: #e1306c;
+}
+.fa-discord {
+  color: rgb(115, 138, 219);
 }
