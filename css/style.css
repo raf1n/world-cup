@@ -87,7 +87,7 @@ header {
 /* Main Middle section  */
 
 main {
-  width: 90%;
+  width: 80%;
 }
 
 .middle-section {
@@ -118,7 +118,7 @@ main {
   text-decoration: none;
   background: white;
   border-radius: 10px;
-  width: 220px;
+  width: 200px;
   height: 64px;
   color: #161616;
   text-align: center;
@@ -300,6 +300,7 @@ main {
   }
   .left-menu-item a {
     border: 1px solid #e8e8e8;
+    width: 180px;
   }
 
   .blogs {

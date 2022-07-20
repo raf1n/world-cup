@@ -290,6 +290,7 @@ main {
     text-decoration: none;
     background: white;
     border: 1px solid #e8e8e8;
+    width: 180px;
   }
   .left-menu-item a:hover {
     transform: scale(1.2);
