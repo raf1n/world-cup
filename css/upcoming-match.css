@@ -395,11 +395,6 @@ main {
   .matches {
     grid-template-columns: repeat(1, 1fr);
   }
-  .view-all {
-    display: inline;
-    position: relative;
-    left: 45%;
-  }
 
   .footer {
     position: relative;
