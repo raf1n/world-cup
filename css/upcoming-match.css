@@ -189,6 +189,11 @@ main {
   position: relative;
   top: 10px;
 }
+/* view all button section  */
+
+.view-all {
+  display: none;
+}
 /* footer style  */
 
 .footer {

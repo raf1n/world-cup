@@ -193,6 +193,11 @@ main {
   position: relative;
   top: 10px;
 }
+/* view all button section  */
+
+.view-all {
+  display: none;
+}
 
 /* footer style  */
 
@@ -264,9 +269,6 @@ main {
 }
 .fa-discord {
   color: rgb(115, 138, 219);
-}
-.view-all {
-  display: none;
 }
 
 /* Resonsive Media Query */
